@@ -1,0 +1,7 @@
+C:\Users\elvin.nasibov\source\repos\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe.config
+C:\Users\elvin.nasibov\source\repos\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe
+C:\Users\elvin.nasibov\source\repos\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.pdb
+C:\Users\elvin.nasibov\source\repos\AbstractFactory\AbstractFactory\obj\Debug\DesignPatterns.csprojAssemblyReference.cache
+C:\Users\elvin.nasibov\source\repos\AbstractFactory\AbstractFactory\obj\Debug\DesignPatterns.csproj.CoreCompileInputs.cache
+C:\Users\elvin.nasibov\source\repos\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.exe
+C:\Users\elvin.nasibov\source\repos\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.pdb
