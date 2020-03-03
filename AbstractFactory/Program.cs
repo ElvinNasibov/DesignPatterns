@@ -81,7 +81,24 @@ namespace DesignPatterns
             Console.ReadKey();
 
 
+            //--------------------------- Singleton
+            Console.WriteLine("--------------------------- Singleton");
 
+            Singleton firstInstance = Singleton.Instance();
+            Singleton secondInstance = Singleton.Instance();
+
+            firstInstance.SampleOperation();
+            Console.WriteLine(secondInstance.GetSampleData());
+            Console.WriteLine(firstInstance.GetHashCode());
+            Console.WriteLine(secondInstance.GetHashCode());
+
+            /*
+            Singleton Sample Data
+            12289376
+            12289376
+            */
+
+            Console.ReadKey();
         }
 
     }
