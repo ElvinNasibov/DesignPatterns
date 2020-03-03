@@ -32,7 +32,7 @@ namespace AbstractFactory
         public override void AnOperation()
         {
             Console.WriteLine("ID : " + id);
-            Console.WriteLine("Class : " + this.GetType().ToString());
+            //Console.WriteLine("Class : " + this.GetType().ToString());
         }
 
 
@@ -52,7 +52,7 @@ namespace AbstractFactory
         public override void AnOperation()
         {
             Console.WriteLine("ID : " + id);
-            Console.WriteLine("Class : " + this.GetType().ToString());
+            ///Console.WriteLine("Class : " + this.GetType().ToString());
         }
     }
 
