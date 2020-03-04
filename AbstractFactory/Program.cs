@@ -132,6 +132,13 @@ namespace DesignPatterns
             Abstract AnotherAbs22 = new RefinedAbstract2(new ConcreteImp2());
             Console.WriteLine(AnotherAbs22.DoSomething());
 
+            /*
+                --------------------------- Bridge
+                RefinedAbstract1 is doing smth. with Imp1
+                RefinedAbstract2 is doing different things with Imp1
+                RefinedAbstract1 is doing smth. with Imp2
+                RefinedAbstract2 is doing different things with Imp2
+             */
             Console.ReadKey();
 
         }
