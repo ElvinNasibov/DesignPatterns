@@ -30,7 +30,7 @@ namespace DesignPatterns
                 AbstractFactory.Program + PepsiColaBottle interacts with AbstractFactory.Program + PepsiColaWater
                 AbstractFactory.Program + PepsiColaCover closes AbstractFactory.Program + PepsiColaBottle
             */
-            Console.ReadKey();
+            //Console.ReadKey();
 
 
 
@@ -52,7 +52,7 @@ namespace DesignPatterns
                 Element: DesignPatterns.Floor builded.
                 Element: DesignPatterns.Roof builded.             
              */
-            Console.ReadKey();
+            //Console.ReadKey();
 
 
 
@@ -64,7 +64,7 @@ namespace DesignPatterns
             product = creator.FactoryMethod();
 
             //creator.AnOperation();
-            Console.ReadKey();
+            //Console.ReadKey();
 
 
             //--------------------------- Prototype
@@ -78,7 +78,7 @@ namespace DesignPatterns
             Prototype clone2 = prototype2.Clone();
             clone2.AnOperation();
 
-            Console.ReadKey();
+            //Console.ReadKey();
 
 
             //--------------------------- Singleton
@@ -93,7 +93,7 @@ namespace DesignPatterns
             Console.WriteLine(ReferenceEquals(firstInstance,secondInstance));
 
             firstInstance.SampleOperation();
-            Console.WriteLine(secondInstance.GetSampleData());                       
+            Console.WriteLine(secondInstance.GetSampleData());
 
             /*            
             12289376
@@ -102,7 +102,7 @@ namespace DesignPatterns
             Singleton Sample Data
             */
 
-            Console.ReadKey();
+            //Console.ReadKey();
 
             ////--------------------------- Adapter (Class)
             //Console.WriteLine("--------------------------- Adapter (Class)");
@@ -116,7 +116,23 @@ namespace DesignPatterns
             Target target = new Adapter();
             target.Operation();
 
+            //Console.ReadKey();
 
+            //--------------------------- Bridge
+            Console.WriteLine("--------------------------- Bridge");           
+            Abstract AnotherAbs11 = new RefinedAbstract1(new ConcreteImp1());
+            Console.WriteLine(AnotherAbs11.DoSomething());
+            
+            Abstract AnotherAbs21 = new RefinedAbstract2(new ConcreteImp1());
+            Console.WriteLine(AnotherAbs21.DoSomething());
+
+            Abstract AnotherAbs12 = new RefinedAbstract1(new ConcreteImp2());
+            Console.WriteLine(AnotherAbs12.DoSomething());
+
+            Abstract AnotherAbs22 = new RefinedAbstract2(new ConcreteImp2());
+            Console.WriteLine(AnotherAbs22.DoSomething());
+
+            Console.ReadKey();
 
         }
 
