@@ -41,12 +41,14 @@ namespace AbstractFactory
 
             Singleton firstInstance = Singleton.Instance();
             Singleton secondInstance = Singleton.Instance();
+            // Singleton thirdinstance = new Singleton(); // error
+
+            Console.WriteLine(firstInstance.GetHashCode());
+            Console.WriteLine(secondInstance.GetHashCode());
+            Console.WriteLine(ReferenceEquals(firstInstance,secondInstance));
 
             firstInstance.SampleOperation();
             Console.WriteLine(secondInstance.GetSampleData());
-            Console.WriteLine(firstInstance.GetHashCode());
-            Console.WriteLine(secondInstance.GetHashCode());
-
 
             Console.ReadKey();
          */

@@ -86,26 +86,47 @@ namespace DesignPatterns
 
             Singleton firstInstance = Singleton.Instance();
             Singleton secondInstance = Singleton.Instance();
+            // Singleton thirdinstance = new Singleton(); // error
 
-            firstInstance.SampleOperation();
-            Console.WriteLine(secondInstance.GetSampleData());
             Console.WriteLine(firstInstance.GetHashCode());
             Console.WriteLine(secondInstance.GetHashCode());
+            Console.WriteLine(ReferenceEquals(firstInstance,secondInstance));
 
-            /*
+            firstInstance.SampleOperation();
+            Console.WriteLine(secondInstance.GetSampleData());                       
+
+            /*            
+            12289376
+            12289376
+            True
             Singleton Sample Data
-            12289376
-            12289376
             */
 
             Console.ReadKey();
+
+            ////--------------------------- Adapter (Class)
+            //Console.WriteLine("--------------------------- Adapter (Class)");
+
+            //iTarget target = new Adapter();
+            //target.Operation();
+
+            //--------------------------- Adapter (Object)
+            Console.WriteLine("--------------------------- Adapter (Object)");
+
+            Target target = new Adapter();
+            target.Operation();
+
+
+
         }
+
+
 
     }
 
 
 
-      
 
-    
+
+
 }

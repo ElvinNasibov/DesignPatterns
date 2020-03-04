@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractFactory.cs" />
+    <Compile Include="Adapter.cs" />
     <Compile Include="Builder.cs" />
     <Compile Include="Factory Method.cs" />
     <Compile Include="Program.cs" />
