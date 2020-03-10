@@ -1,6 +1,8 @@
 ﻿using AbstractFactory;
+using DesignPatterns;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,7 +46,7 @@ namespace DesignPatterns
             House house = stoneHouseBuilder.GetResult();
             house.Show();
 
-            /* // sonuc - Builder
+            /* //--------------------------- Builder
                 Basement Created
                 Floor Created
                 Roof Created
@@ -139,17 +141,75 @@ namespace DesignPatterns
                 RefinedAbstract1 is doing smth. with Imp2
                 RefinedAbstract2 is doing different things with Imp2
              */
+            
+            //--------------------------- Composite
+            Console.WriteLine("--------------------------- Composite");
+            Component root = new Composite("root");
+            Component branch1 = new Composite(" - branch1");
+            Component branch2 = new Composite(" - branch2");
+            Component leaf1 = new Leaf(" - - leaf1");
+            Component leaf2 = new Leaf(" - - leaf2");
+            Component leaf3 = new Leaf(" - - leaf3");
+
+            root.Add(branch1);
+            root.Add(branch2);
+            branch1.Add(leaf1);
+            branch1.Add(leaf2);
+            branch2.Add(leaf3);
+
+            root.Operation();
+            
+            /*             
+            --------------------------- Composite
+            root
+             - branch1
+             - - leaf1
+             - - leaf2
+             - branch2
+             - - leaf3
+            */
+
+            //--------------------------- Decorator
+            Console.WriteLine("--------------------------- Decorator");
+            AbstractComponent someComponenet = new ConcreteComponenet();
+            Decorator decoratorA = new ConcreteDecoratorA();
+            Decorator decoratorB = new ConcreteDecoratorB();
+
+            decoratorA.component = someComponenet;
+            decoratorB.component = decoratorA;
+            decoratorB.Operation();
+
+            /*
+            --------------------------- Decorator
+            Concrete Componenet Operation
+            Some State
+            Some Behavior
+            */
+
+            //--------------------------- Facade
+            Console.WriteLine("--------------------------- Facade");
+            Facade facade = new Facade();
+            facade.OperationAB();
+            facade.OperationCD();
+
+            /*
+            --------------------------- Facade
+            Operation A
+            Operation B
+            Operation C
+            Operation D
+
+             */
+
             Console.ReadKey();
 
         }
 
 
 
+
+
     }
-
-
-
-
 
 
 }

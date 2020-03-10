@@ -43,18 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractFactory.cs" />
-    <Compile Include="Adapter.cs" />
-    <Compile Include="Bridge.cs" />
-    <Compile Include="Builder.cs" />
-    <Compile Include="Factory Method.cs" />
+    <Compile Include="Creational Patterns %285%29\AbstractFactory.cs" />
+    <Compile Include="Structural Patterns %287%29\Adapter.cs" />
+    <Compile Include="Structural Patterns %287%29\Bridge.cs" />
+    <Compile Include="Creational Patterns %285%29\Builder.cs" />
+    <Compile Include="Structural Patterns %287%29\Composite.cs" />
+    <Compile Include="Creational Patterns %285%29\Factory Method.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Prototype.cs" />
-    <Compile Include="Singleton.cs" />
+    <Compile Include="Creational Patterns %285%29\Prototype.cs" />
+    <Compile Include="Creational Patterns %285%29\Singleton.cs" />
+    <Compile Include="Structural Patterns %287%29\Decorator.cs" />
+    <Compile Include="Structural Patterns %287%29\Facade.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Behavioral Patterns %2811%29\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
