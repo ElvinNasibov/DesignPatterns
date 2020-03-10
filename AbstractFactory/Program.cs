@@ -1,5 +1,4 @@
-﻿using AbstractFactory;
-using DesignPatterns;
+﻿using DesignPatterns;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -231,13 +230,30 @@ namespace DesignPatterns
             RoleDoctorEvil dr = new RoleDoctorEvil(mike);
             dr.Greetings("Hello! I'm Dr. Evil!");
 
-            Console.ReadKey();
-
             /*
             --------------------------- Flyweight
             Hello! I'm Austin Powers!
             Hello! I'm Dr. Evil!
             */
+
+
+            //--------------------------- Proxy
+            Console.WriteLine("--------------------------- Proxy");
+            //Subject original = new Original();
+            //Subject proxy = new Proxy(original);
+            //proxy.Operation();
+
+            Subject anotherProxy = new Proxy();
+            anotherProxy.Operation();
+
+            /*
+            --------------------------- Proxy
+            Do Smth
+            Do Smth
+            */
+
+
+            Console.ReadKey();
         }
 
 
