@@ -55,6 +55,7 @@
     <Compile Include="Creational Patterns %285%29\Singleton.cs" />
     <Compile Include="Structural Patterns %287%29\Decorator.cs" />
     <Compile Include="Structural Patterns %287%29\Facade.cs" />
+    <Compile Include="Structural Patterns %287%29\Flyweight.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

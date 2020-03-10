@@ -169,6 +169,7 @@ namespace DesignPatterns
              - - leaf3
             */
 
+
             //--------------------------- Decorator
             Console.WriteLine("--------------------------- Decorator");
             AbstractComponent someComponenet = new ConcreteComponenet();
@@ -179,12 +180,14 @@ namespace DesignPatterns
             decoratorB.component = decoratorA;
             decoratorB.Operation();
 
+
             /*
             --------------------------- Decorator
             Concrete Componenet Operation
             Some State
             Some Behavior
             */
+
 
             //--------------------------- Facade
             Console.WriteLine("--------------------------- Facade");
@@ -199,10 +202,42 @@ namespace DesignPatterns
             Operation C
             Operation D
 
-             */
+            */
+
+
+            //--------------------------- Flyweight
+            Console.WriteLine("--------------------------- Flyweight");
+            /*
+            int externalState = 0;
+
+            Flyweight flyweight = null;
+            FlyweightFactory factory = new FlyweightFactory();
+
+            flyweight = factory.GetFlyweight("1");
+            flyweight.Operation(externalState);
+
+            flyweight = factory.GetFlyweight("10");
+            flyweight.Operation(externalState);
+
+            flyweight = new UnsharedConcreteFlyweight();
+            flyweight.Operation(externalState);
+            */
+
+            ActorMikeMyers mike = new ActorMikeMyers();
+
+            RoleAustinPowers austin = new RoleAustinPowers(mike);
+            austin.Greetings("Hello! I'm Austin Powers!");
+
+            RoleDoctorEvil dr = new RoleDoctorEvil(mike);
+            dr.Greetings("Hello! I'm Dr. Evil!");
 
             Console.ReadKey();
 
+            /*
+            --------------------------- Flyweight
+            Hello! I'm Austin Powers!
+            Hello! I'm Dr. Evil!
+            */
         }
 
 
