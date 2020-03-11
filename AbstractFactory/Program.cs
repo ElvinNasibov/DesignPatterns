@@ -267,6 +267,22 @@ namespace DesignPatterns
                 Two
             */
 
+
+            //--------------------------- Command
+            Console.WriteLine("--------------------------- Command");
+            Receiver povar = new Receiver();
+            Command zakaz = new ConcreteCommand(povar);
+            //Invoker ofichiant = new Invoker(zakaz);
+            Invoker ofichiant = new Invoker();
+
+            ofichiant.StoreCommand(zakaz);
+            ofichiant.Execute();
+
+            /*
+            --------------------------- Command
+            Receiver! 
+            */
+
             Console.ReadKey();
         }
 
