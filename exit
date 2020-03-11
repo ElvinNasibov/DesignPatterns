@@ -1,0 +1,59 @@
+[33mcommit d24b1c39eee0a6b9af0dda164c4f219e143cd7b0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: elvin.nasibov <elvin.nasibov@zaimogluholding.com.tr>
+Date:   Wed Mar 11 11:32:02 2020 +0300
+
+    ChainOfResponsibility
+
+[33mcommit acbcd528e35c0c7ad83abd7feb29308ed4e090fc[m
+Author: elvin.nasibov <elvin.nasibov@zaimogluholding.com.tr>
+Date:   Tue Mar 10 15:03:42 2020 +0300
+
+    Proxy added
+
+[33mcommit fbf01efa2b78df43845efcc958e954d9eab941a9[m
+Author: elvin.nasibov <elvin.nasibov@zaimogluholding.com.tr>
+Date:   Tue Mar 10 10:30:21 2020 +0300
+
+    Flyweight
+
+[33mcommit d8b17434ab2357260a1d7e250d959c032a71feac[m
+Author: elvin.nasibov <elvin.nasibov@zaimogluholding.com.tr>
+Date:   Tue Mar 10 08:36:40 2020 +0300
+
+    update
+
+[33mcommit d2a653cbf2ec8268b9413cf8b0a8c3c664f7c803[m
+Author: elvin.nasibov <elvin.nasibov@zaimogluholding.com.tr>
+Date:   Tue Mar 10 08:17:27 2020 +0300
+
+    Decorator + Facade
+
+[33mcommit c2aa9edc6f5086107c534034ca483e5587faba71[m
+Author: elvin.nasibov <elvin.nasibov@zaimogluholding.com.tr>
+Date:   Wed Mar 4 16:52:32 2020 +0300
+
+    Bridge update
+
+[33mcommit 072533351d297ebaf656d3dcd9d1c5db5f6a19c7[m
+Author: elvin.nasibov <elvin.nasibov@zaimogluholding.com.tr>
+Date:   Wed Mar 4 15:43:25 2020 +0300
+
+    Bridge added
+
+[33mcommit ce9089fb30beb9fa76ebcc439daeb8c8dad7142b[m
+Author: elvin.nasibov <elvin.nasibov@zaimogluholding.com.tr>
+Date:   Wed Mar 4 13:50:08 2020 +0300
+
+    update
+
+[33mcommit ca7edfcf7d5f408721472369b691cca8d8552edb[m
+Author: elvin.nasibov <elvin.nasibov@zaimogluholding.com.tr>
+Date:   Tue Mar 3 15:16:42 2020 +0300
+
+    wrong Builder was deleted
+
+[33mcommit efb78d272b7114ededb58a509945d2daf24459e7[m
+Author: elvin.nasibov <elvin.nasibov@zaimogluholding.com.tr>
+Date:   Tue Mar 3 15:12:58 2020 +0300
+
+    Singleton Added
