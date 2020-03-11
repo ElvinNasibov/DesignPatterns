@@ -97,10 +97,10 @@ namespace DesignPatterns
             Console.WriteLine(secondInstance.GetSampleData());
 
             /*            
-            12289376
-            12289376
-            True
-            Singleton Sample Data
+                12289376
+                12289376
+                True
+                Singleton Sample Data
             */
 
             //Console.ReadKey();
@@ -139,7 +139,7 @@ namespace DesignPatterns
                 RefinedAbstract2 is doing different things with Imp1
                 RefinedAbstract1 is doing smth. with Imp2
                 RefinedAbstract2 is doing different things with Imp2
-             */
+            */
             
             //--------------------------- Composite
             Console.WriteLine("--------------------------- Composite");
@@ -159,13 +159,13 @@ namespace DesignPatterns
             root.Operation();
             
             /*             
-            --------------------------- Composite
-            root
-             - branch1
-             - - leaf1
-             - - leaf2
-             - branch2
-             - - leaf3
+                --------------------------- Composite
+                root
+                 - branch1
+                 - - leaf1
+                 - - leaf2
+                 - branch2
+                 - - leaf3
             */
 
 
@@ -181,10 +181,10 @@ namespace DesignPatterns
 
 
             /*
-            --------------------------- Decorator
-            Concrete Componenet Operation
-            Some State
-            Some Behavior
+                --------------------------- Decorator
+                Concrete Componenet Operation
+                Some State
+                Some Behavior
             */
 
 
@@ -195,12 +195,11 @@ namespace DesignPatterns
             facade.OperationCD();
 
             /*
-            --------------------------- Facade
-            Operation A
-            Operation B
-            Operation C
-            Operation D
-
+                --------------------------- Facade
+                Operation A
+                Operation B
+                Operation C
+                Operation D
             */
 
 
@@ -231,9 +230,9 @@ namespace DesignPatterns
             dr.Greetings("Hello! I'm Dr. Evil!");
 
             /*
-            --------------------------- Flyweight
-            Hello! I'm Austin Powers!
-            Hello! I'm Dr. Evil!
+                --------------------------- Flyweight
+                Hello! I'm Austin Powers!
+                Hello! I'm Dr. Evil!
             */
 
 
@@ -247,11 +246,26 @@ namespace DesignPatterns
             anotherProxy.Operation();
 
             /*
-            --------------------------- Proxy
-            Do Smth
-            Do Smth
+                --------------------------- Proxy
+                Do Smth
+                Do Smth
             */
 
+
+            //--------------------------- ChainOfResponsibility
+            Console.WriteLine("--------------------------- ChainOfResponsibility");
+            Handler concreteHandler1 = new ConcreteHandler1();
+            Handler concreteHandler2 = new ConcreteHandler2();
+
+            concreteHandler1.successor = concreteHandler2;
+            concreteHandler1.Operation(1);
+            concreteHandler1.Operation(2);
+
+            /*
+                --------------------------- ChainOfResponsibility
+                One
+                Two
+            */
 
             Console.ReadKey();
         }
