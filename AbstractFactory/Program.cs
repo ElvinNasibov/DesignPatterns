@@ -25,14 +25,12 @@ namespace DesignPatterns
             client = new Client(new PepsiColaFactory());
             client.Run();
 
-            /* // sonuc - AbstractFactory
+            /* 
                 AbstractFactory.Program + CocaColaBottle interacts with AbstractFactory.Program + CocaColaWater
                 AbstractFactory.Program + CocaColaCover closes AbstractFactory.Program + CocaColaBottle
                 AbstractFactory.Program + PepsiColaBottle interacts with AbstractFactory.Program + PepsiColaWater
                 AbstractFactory.Program + PepsiColaCover closes AbstractFactory.Program + PepsiColaBottle
             */
-            //Console.ReadKey();
-
 
 
             //--------------------------- Builder
@@ -45,7 +43,7 @@ namespace DesignPatterns
             House house = stoneHouseBuilder.GetResult();
             house.Show();
 
-            /* //--------------------------- Builder
+            /* 
                 Basement Created
                 Floor Created
                 Roof Created
@@ -53,8 +51,6 @@ namespace DesignPatterns
                 Element: DesignPatterns.Floor builded.
                 Element: DesignPatterns.Roof builded.             
              */
-            //Console.ReadKey();
-
 
 
             //--------------------------- FactoryMethod
@@ -63,10 +59,9 @@ namespace DesignPatterns
             Creator creator = new ConcreteCreator();            
             Product product = null;
             product = creator.FactoryMethod();
-
             //creator.AnOperation();
-            //Console.ReadKey();
-
+            
+            /* 46104728 */
 
             //--------------------------- Prototype
             Console.WriteLine("--------------------------- Prototype");
@@ -79,7 +74,12 @@ namespace DesignPatterns
             Prototype clone2 = prototype2.Clone();
             clone2.AnOperation();
 
-            //Console.ReadKey();
+            /*
+                ID : 1
+                Class : DesignPatterns.ConcretePrototype1
+                ID : 2
+                Class : DesignPatterns.ConcretePrototype2
+            */
 
 
             //--------------------------- Singleton
@@ -102,22 +102,20 @@ namespace DesignPatterns
                 True
                 Singleton Sample Data
             */
-
-            //Console.ReadKey();
-
-            ////--------------------------- Adapter (Class)
+            
+            
             //Console.WriteLine("--------------------------- Adapter (Class)");
-
             //iTarget target = new Adapter();
             //target.Operation();
-
-            //--------------------------- Adapter (Object)
+            
             Console.WriteLine("--------------------------- Adapter (Object)");
-
             Target target = new Adapter();
             target.Operation();
 
-            //Console.ReadKey();
+            /*
+                SpecificOperation
+            */
+
 
             //--------------------------- Bridge
             Console.WriteLine("--------------------------- Bridge");           
@@ -134,7 +132,6 @@ namespace DesignPatterns
             Console.WriteLine(AnotherAbs22.DoSomething());
 
             /*
-                --------------------------- Bridge
                 RefinedAbstract1 is doing smth. with Imp1
                 RefinedAbstract2 is doing different things with Imp1
                 RefinedAbstract1 is doing smth. with Imp2
@@ -158,8 +155,7 @@ namespace DesignPatterns
 
             root.Operation();
             
-            /*             
-                --------------------------- Composite
+            /*  
                 root
                  - branch1
                  - - leaf1
@@ -181,7 +177,6 @@ namespace DesignPatterns
 
 
             /*
-                --------------------------- Decorator
                 Concrete Componenet Operation
                 Some State
                 Some Behavior
@@ -195,7 +190,6 @@ namespace DesignPatterns
             facade.OperationCD();
 
             /*
-                --------------------------- Facade
                 Operation A
                 Operation B
                 Operation C
@@ -206,19 +200,19 @@ namespace DesignPatterns
             //--------------------------- Flyweight
             Console.WriteLine("--------------------------- Flyweight");
             /*
-            int externalState = 0;
+                int externalState = 0;
 
-            Flyweight flyweight = null;
-            FlyweightFactory factory = new FlyweightFactory();
+                Flyweight flyweight = null;
+                FlyweightFactory factory = new FlyweightFactory();
 
-            flyweight = factory.GetFlyweight("1");
-            flyweight.Operation(externalState);
+                flyweight = factory.GetFlyweight("1");
+                flyweight.Operation(externalState);
 
-            flyweight = factory.GetFlyweight("10");
-            flyweight.Operation(externalState);
+                flyweight = factory.GetFlyweight("10");
+                flyweight.Operation(externalState);
 
-            flyweight = new UnsharedConcreteFlyweight();
-            flyweight.Operation(externalState);
+                flyweight = new UnsharedConcreteFlyweight();
+                flyweight.Operation(externalState);
             */
 
             ActorMikeMyers mike = new ActorMikeMyers();
@@ -230,7 +224,6 @@ namespace DesignPatterns
             dr.Greetings("Hello! I'm Dr. Evil!");
 
             /*
-                --------------------------- Flyweight
                 Hello! I'm Austin Powers!
                 Hello! I'm Dr. Evil!
             */
@@ -246,7 +239,6 @@ namespace DesignPatterns
             anotherProxy.Operation();
 
             /*
-                --------------------------- Proxy
                 Do Smth
                 Do Smth
             */
@@ -262,7 +254,6 @@ namespace DesignPatterns
             concreteHandler1.Operation(2);
 
             /*
-                --------------------------- ChainOfResponsibility
                 One
                 Two
             */
@@ -279,8 +270,24 @@ namespace DesignPatterns
             ofichiant.Execute();
 
             /*
-            --------------------------- Command
-            Receiver! 
+                Receiver! 
+            */
+
+
+            //--------------------------- Interpreteur
+            Console.WriteLine("--------------------------- Interpreteur");
+            Context context = new Context
+            {
+                Vocabulary = 'a',
+                Source = "aaa"
+            };
+
+            var expression = new NonTerminalExpression();
+            expression.Interpret(context);
+            Console.WriteLine(context.Result);
+
+            /*                
+                True 
             */
 
             Console.ReadKey();

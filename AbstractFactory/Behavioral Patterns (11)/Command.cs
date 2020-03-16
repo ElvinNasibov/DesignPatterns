@@ -22,7 +22,7 @@ namespace DesignPatterns
 
     class ConcreteCommand : Command // Konkretniy Zakaz
     {
-        public ConcreteCommand(Receiver receiver) : base(receiver) 
+        public ConcreteCommand(Receiver receiver) : base(receiver)
         { }
 
         public override void Operation()
